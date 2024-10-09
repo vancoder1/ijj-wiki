@@ -1,13 +1,13 @@
 body {
-    padding: 0;
-    margin: 0;
+    color: #181C14;
+    background-color: #ECDFCC;
 }
 
 header {
-    position: absolute;
+    position: fixed;
     height: 80px;
     width: 100%;
-    background-color: #d5d5d5;
+    background-color: #697565;
     
 }
 
@@ -15,4 +15,12 @@ header {
     font-family: "Titillium Web", sans-serif;
     font-weight: 600;
     font-style: normal;
+}
+
+footer {
+    position: fixed;
+    height: 80px;
+    width: 100%;
+    bottom: 0;
+    background-color: #697565;
 }
