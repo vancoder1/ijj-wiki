@@ -41,12 +41,17 @@ header {
 }
 
 .navbar a:hover {
-    color: #ecdfcc9f
+    color: #cec3b2
 }
 
 .navbar a:active {
-    font-weight: 500;
-    color: #D6BD98;
+    font-weight: 600;
+    color: #d4b383;
+}
+
+.active {
+    font-weight: 600;
+    color: #d4b383;
 }
 
 footer {
