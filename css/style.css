@@ -34,9 +34,11 @@ header {
 
 footer {
     position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     bottom: 0;
     height: 80px;
     width: 100%;
-    text-align: center;
     background-color: #697565;
 }
