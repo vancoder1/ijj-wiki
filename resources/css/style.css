@@ -23,7 +23,8 @@ header {
     top: 0;
     height: 80px;
     width: 100%;
-    background-color: #697565;
+    background-color: #257;
+    color: #ECDFCC;
 }
 
 #logo {
@@ -31,14 +32,13 @@ header {
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-style: normal;
-    color: #ECDFCC;
 }
 
 .navbar a {
     padding: 1.5rem;
     font-size: 18px;
     text-decoration: none;
-    color: #ECDFCC;   
+    color: #ECDFCC;
 }
 
 .navbar a:hover {
@@ -60,6 +60,10 @@ main {
     padding: 2rem 5rem;
 }
 
+main p {
+    font-size: 18px;
+}
+
 footer {
     position: absolute;
     display: flex;
@@ -68,6 +72,6 @@ footer {
     bottom: 0;
     height: 80px;
     width: 100%;
-    background-color: #697565;
+    background-color: #257;
     color: #ECDFCC; 
 }
