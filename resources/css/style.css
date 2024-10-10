@@ -42,17 +42,12 @@ header {
 }
 
 .navbar a:hover {
-    color: #cec3b2
+    color: #bdb2a1
 }
 
-.navbar a:active {
+.navbar a.active {
     font-weight: 600;
-    color: #d4b383;
-}
-
-.active {
-    font-weight: 600;
-    color: #d4b383;
+    color: #faae3e;
 }
 
 main {
