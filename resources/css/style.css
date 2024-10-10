@@ -27,14 +27,14 @@ header {
 }
 
 #logo {
-    margin-left: 1rem;
+    margin-left: 3rem;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .navbar a {
-    padding: 1rem;
+    padding: 0.8rem;
     font-size: 18px;
     text-decoration: none;
     color: #ECDFCC;
@@ -51,7 +51,7 @@ header {
 
 main {
     flex: 1;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
 }
 
 main p {
