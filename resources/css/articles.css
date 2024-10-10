@@ -1,0 +1,13 @@
+.articles a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    font-size: 18px;
+    text-decoration: none;
+    color: #181C14;
+}
+
+.articles a:hover {
+    color: #930d09;
+}
