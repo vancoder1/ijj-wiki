@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 body {
-    font-family: "Hind", sans-serif;
+    font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #ECDFCC;
@@ -28,36 +27,31 @@ header {
 }
 
 #logo {
-    margin-left: 1rem;
+    margin-left: 3rem;
     font-family: "Nunito", sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .navbar a {
-    padding: 1.5rem;
+    padding: 0.8rem;
     font-size: 18px;
     text-decoration: none;
     color: #ECDFCC;
 }
 
 .navbar a:hover {
-    color: #cec3b2
+    color: #bdb2a1
 }
 
-.navbar a:active {
+.navbar a.active {
     font-weight: 600;
-    color: #d4b383;
-}
-
-.active {
-    font-weight: 600;
-    color: #d4b383;
+    color: #faae3e;
 }
 
 main {
     flex: 1;
-    padding: 2rem 5rem;
+    padding: 2rem 3rem;
 }
 
 main p {
@@ -65,7 +59,6 @@ main p {
 }
 
 footer {
-    position: absolute;
     display: flex;
     justify-content: center;
     align-items: center;

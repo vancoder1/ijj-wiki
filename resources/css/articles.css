@@ -1,0 +1,19 @@
+.articles a {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    margin: 1.5rem;
+    border: 2px solid #181C14;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #181C14;
+}
+
+.articles a:hover {
+    border: 2px solid #a4100b;
+    background-color: #e9d7bd;
+    color: #a4100b;
+    font-weight: bold;
+}
