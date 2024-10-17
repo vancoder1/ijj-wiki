@@ -31,10 +31,9 @@ h3 {
     padding-bottom: 0.5rem;
 }
 
-span {
+.clock {
     float: center;
     align-items: center;
     text-align: center;
-    justify-content: center;
-    
+    justify-content: center;  
 }
