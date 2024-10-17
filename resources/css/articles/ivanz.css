@@ -1,3 +1,7 @@
+.article-heading {
+    text-align: center;
+}
+
 table {
     border-collapse: collapse;
     margin: 25px 0;
@@ -20,4 +24,14 @@ tr {
 th, td {
     border: 1px solid black;
     padding: 12px 15px;
+}
+
+p {
+    text-indent: 2rem;
+}
+
+h2 {
+    background: linear-gradient(120deg, #2980B9, #8E43AD, #1CA085);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
 }
