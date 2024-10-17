@@ -13,46 +13,84 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <link rel="stylesheet" href="../resources/css/style.css" />
-    <link rel="stylesheet" href="../resources/css/jaydenw.css" />
+    <link rel="stylesheet" href="../resources/css/articles/jaydenw.css" />
 </head>
 
-<body>
+<body onload="startTime()">
     <div id="page-container">
         <header>
             <div id="logo">
                 <h1>IJJ WIKI</h1>
             </div>
             <div class="navbar">
+                <img style="width: 75px; padding-right: 20px;" src="https://cdn.discordapp.com/attachments/1281389327456276511/1296307364353540148/image.png?ex=6711cfcf&is=67107e4f&hm=d89d299c3aed22b866fdf70aa984a372640cc5301e1403f75476be579f9f4ca9&"></img>
                 <a class="active" href="../index.html">Home</a>
                 <a href="../articles.html">Articles</a>
                 <a href="../about.html">About</a>
             </div>
         </header>
         <main>
-            <h1>The Difference Between Mac and Windows Computers</h1>
-            <p>
-                the pros and cons of using Macs or Windows computers. While the differences may not seem immediately
-                apparent, the stark contrast between both systems lends to many a comparison and even controversy. In
-                addition to being produced by two tech giants of the industry, Mac and Windows computers have little in
-                common other than they they both function as home computers. We have chosen this topic as I am an avid
-                Apple user, albeit with a Windows computer at home, while Ivan solely uses Windows machines, so we
-                thought it a fun comparison. We believe this to be an easy topic for us, as we are always and constantly
-                working with these types of machines and can easily compare the two in real time. We’ll be taking our
-                research from various reviews from various sites, and comparing them extensively.
 
-            </p>
-            <p>
-                Body 1
-            </p>
-            <p>
-                Body 2
-            </p>
-            <p>
-                Body 3
-            </p>
-            <p>
-                Conclusion
-            </p>
+            <div>
+                <h4 style="text-align: center;">Current Time:</h4>
+                <span id="txt" style="text-align: center;"></span>
+
+                <script>
+                function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+                return i;
+                }
+                </script>
+
+            </div>
+
+            <br/>
+            <br/>
+            <br/>
+            <h1 class="title"><b>The Difference Between Mac and Windows Computers</b></h1>
+            <hr/>
+            <wbr/>
+            <br/>
+            <br/>
+            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated">Introduction</mark></i> -</h3>
+                <p>
+                    My article is about the pros and cons of using Mac or Windows computers. While the differences may not seem immediately
+                    apparent, the stark contrast between both systems lends to many a comparison and even controversy. In
+                    addition to being produced by two tech giants of the industry, Mac and Windows computers have little in
+                    common other than they they both function as home computers. I have chosen this topic as I am an <i>avid</i>
+                    Apple user across multiple different types of devices, albeit with a Windows computer at home.
+
+                </p>
+                <br/>
+                <br/>
+                <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated">Mac Computers (Apple)</mark></i> -</h3>
+                <p>
+                    To start, Mac computers often lend themselves to being hard to get into for users who aren’t already integrated within Apple’s ecosystem. While they do seem to be more “new-user friendly” to the untrained eye, with their aesthetically-pleasing menus and easy to navigate hotbar and default apps, Mac computers are probably the most limiting types of computers. Whilst Windows systems are fairly open source, allowing you to modify code without much fuss, change the hardware within the system with ease, and organise your files with maximum precision, Mac computers seem to limit your freedom of modification and customisation, giving you few - if any - opportunities to change out the hardware within your system, or change the fundamental source code within your software, without going through three times the hoops to get to the same place Windows users could get to in one hoop. Mac systems are incompatible with most softwares, as they are built on a different architecture than Windows systems (architecture being the basic foundation for how the machine interprets how to run programs; Mac systems use Apple’s home-grown Metal architecture, which is limited to 64-bit and is harder to make software for, whilst Windows uses their wildly popular DirectX architecture). 
+                </p>
+                <br/>
+                <br/>
+                <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated">Windows Computers (Microsoft)</mark></i> -</h3>
+                <p>
+                    In contrast, Windows machines are easier to get into for most people, but they are so open-ended, to a new user it can seem like an almost unlimited amount of options for how you want to use your system. Like I’ve stated in the previous paragraph, Windows computers have an almost unlimited amount of potential when it comes to freedom of customisation and organisation. The default Windows apps allow you to easily navigate your files and move them as you see fit, and change the file types with ease. Nearly every instance of software on the internet has been built with Windows in mind, as the language base they use, DirectX, is much more versatile and is much easier to code for than Apple’s Metal architecture; such is the reason why Mac computers have constant issue’s with software compatibility. What’s more, as of MacOS update Catalina, released in October of 2019, Mac systems no longer support 32-bit softwares, which invalidates most older software programs. 64-bit programs became the standard for software after the mid-2000s, as they are more powerful and allow for more computing power within the program. However, most programs nowadays are still built on 32-bit, as they are less costly to make and are less taxing on the user’s system, allowing for an easier time coding the software, and is more energy-efficient on the power supply of the system; such is another factor in why Mac computers generally have compatibility issues.
+                </p>
+                <br/>
+                <br/>
+                <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated">Conclusion</mark></i> -</h3>
+                <p>
+                    To recap, Mac and Windows computers are generally two ends of a spectrum, as variations of home computing that get the same job done, but through vastly different lenses. Mac computers are typically better for Apple users, as they allow a seamless integration into the computing world for said Apple users, but not for anyone else. In nearly every case, Windows checks all the boxes, and that’s just the facts.
+                </p>
+                <br/>
         </main>
         <footer>
             <p>&copy; 2024 Copyright </p>
