@@ -31,9 +31,43 @@ h3 {
     padding-bottom: 0.5rem;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1em;
+    font-family: sans-serif;
+    min-width: 300px;
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+thead tr {
+    background-color: #257;
+    color: #ECDFCC
+}
+
+tr {
+    border: 1px solid black;
+}
+
+th {
+    padding: 12px 15px;
+    border-top: none;
+}
+
+td {
+    padding: 12px 15px;
+}
+
+td:first-child, th:first-child {
+    border-left: none;
+}
+
+td, th {
+    border-left: solid black 1px;
+    border-top: solid black 1px;
+}
+
 .clock {
-    float: center;
-    align-items: center;
     text-align: center;
-    justify-content: center;  
 }
