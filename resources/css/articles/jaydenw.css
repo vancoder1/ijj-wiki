@@ -19,6 +19,12 @@
 
 p {
     text-indent: 2rem;
+    font-size: 12px;
+}
+
+.multicol {
+    column-count: 2;
+    column-width: auto;
 }
 
 .title {
@@ -28,7 +34,7 @@ p {
 }
 
 h3 {
-    padding-bottom: 0.5rem;
+    padding-bottom: 0.6rem;
 }
 
 table {
@@ -51,12 +57,7 @@ tr {
 }
 
 th {
-    padding: 12px 15px;
     border-top: none;
-}
-
-td {
-    padding: 12px 15px;
 }
 
 td:first-child, th:first-child {
@@ -66,8 +67,40 @@ td:first-child, th:first-child {
 td, th {
     border-left: solid black 1px;
     border-top: solid black 1px;
+    padding: 12px 15px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 30px;
+}
+
+.grid-container img {
+    width: 75px;
+    height: 75px;
+    justify-self: center;
+    align-self: center;
+}
+
+.grid-item {
+    padding: 50px;
+    text-align: center;  
 }
 
 .clock {
+    justify-self: center;
     text-align: center;
+}
+
+@media screen and (max-width: 540px) {
+    p {
+        column-count: 1;
+    }
+
+    main {
+        padding: 2rem 0.5rem;
+    }
 }
