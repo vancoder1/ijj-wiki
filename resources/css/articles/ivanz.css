@@ -50,4 +50,5 @@ h2 {
 }
 .grid-images img {
     width: 350px;
+    justify-self: center;
 }
