@@ -43,12 +43,36 @@ header {
 }
 
 .navbar a:hover {
-    color: #bdb2a1
+    color: #bdb2a1;
 }
 
 .navbar a.active {
     font-weight: 600;
     color: #faae3e;
+}
+
+.internal-navigation {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.internal-navigation a {
+    padding: 0.5rem;
+    border: 2px solid #181C14;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #181C14;
+}
+
+.internal-navigation a:hover {
+    border: 2px solid #a4100b;
+    background-color: #e9d7bd;
+    color: #a4100b;
+    font-weight: bold;
 }
 
 main {
@@ -69,4 +93,10 @@ footer {
     width: 100%;
     background-color: #257;
     color: #ECDFCC; 
+}
+
+@media screen and (max-width: 768px) {
+    .internal-navigation {
+        flex-direction: column;
+    }
 }
