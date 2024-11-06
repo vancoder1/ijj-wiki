@@ -96,7 +96,7 @@ td, th {
 }
 
 @media screen and (max-width: 540px) {
-    p {
+    .multicol {
         column-count: 1;
     }
 
