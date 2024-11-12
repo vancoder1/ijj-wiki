@@ -17,46 +17,18 @@
 </head>
 
 <!--Header/Navbar-->
-<body onload="startTime()" id="page-container">
-    <header>
-        <div id="logo">
-            <h1>IJJ WIKI</h1>
-        </div>
-        <nav class="navbar">
-            <a class="active" href="../index.html">Home</a>
-            <a href="../articles.html">Articles</a>
-            <a href="../about.html">About</a>
-        </nav>
-    </header>
-    <main>
-        <section class="grid-container">
-
-            <!--Apple logo-->
-            <img src="../resources/images/apple.png" alt="Apple logo"></img>
-            
-            <!--Clock-->
-            <div class="clock">
-                <h4>Current Time:</h4>
-                <span id="txt"></span>
-
-                <script>
-                function startTime() {
-                const today = new Date();
-                let h = today.getHours();
-                let m = today.getMinutes();
-                let s = today.getSeconds();
-                m = checkTime(m);
-                s = checkTime(s);
-                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-                setTimeout(startTime, 1000);
-                }
-
-                function checkTime(i) {
-                if (i < 10) {i = "0" + i};
-                return i;
-                }
-                </script>
-            </div>
+<body onload="startTime()">
+    <div id="page-container">
+        <header>
+            <h1 id="logo">IJJ WIKI</h1>
+            <nav class="navbar">
+                <a class="active" href="../index.html">Home</a>
+                <a href="../articles.html">Articles</a>
+                <a href="../about.html">About</a>
+            </nav>
+        </header>
+        <main>
+            <div class="grid-container">
 
             <!--Windows logo-->
             <img src="../resources/images/windows.png" alt="Windows logo"></img>
