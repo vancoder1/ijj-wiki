@@ -1,10 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 350c344f4c4b91601998828d05c22e4e1b607c2e
 #page-container {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
@@ -35,23 +31,23 @@ header {
     font-style: normal;
 }
 
-nav {
+.navbar {
     padding: 0.8rem;
     font-size: 18px;
     text-decoration: none;
     color: #ECDFCC;
 }
 
-nav a:hover {
+.navbar a:hover {
     color: #bdb2a1;
 }
 
-nav a.active {
+.navbar a.active {
     font-weight: 600;
     color: #faae3e;
 }
 
-.navbar {
+.nav {
     display: flex;
     flex-direction: row;
     flex: 1;
@@ -59,7 +55,7 @@ nav a.active {
     justify-content:space-evenly;
 }
 
-.navbar a {
+.nav a {
     padding: 0.5rem;
     border: 2px solid #181C14;
     border-radius: 30px;
@@ -68,7 +64,7 @@ nav a.active {
     color: #181C14;
 }
 
-.navbar a:hover {
+.nav a:hover {
     border: 2px solid #a4100b;
     background-color: #e9d7bd;
     color: #a4100b;

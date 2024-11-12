@@ -17,149 +17,150 @@
 </head>
 
 <!--Header/Navbar-->
-<body onload="startTime()">
-    <div id="page-container">
-        <header>
-            <h1 id="logo">IJJ WIKI</h1>
-            <div class="navbar">
-                <a class="active" href="../index.html">Home</a>
-                <a href="../articles.html">Articles</a>
-                <a href="../about.html">About</a>
+<body onload="startTime()" id="page-container">
+    <header>
+        <div id="logo">
+            <h1>IJJ WIKI</h1>
+        </div>
+        <nav class="navbar">
+            <a class="active" href="../index.html">Home</a>
+            <a href="../articles.html">Articles</a>
+            <a href="../about.html">About</a>
+        </nav>
+    </header>
+    <main>
+        <section class="grid-container">
+
+            <!--Apple logo-->
+            <img src="../resources/images/apple.png" alt="Apple logo"></img>
+            
+            <!--Clock-->
+            <div class="clock">
+                <h4>Current Time:</h4>
+                <span id="txt"></span>
+
+                <script>
+                function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+                }
+
+                function checkTime(i) {
+                if (i < 10) {i = "0" + i};
+                return i;
+                }
+                </script>
             </div>
-        </header>
-        <main>
-            <div class="grid-container">
 
-                <!--Apple logo-->
-                <img src="../resources/images/apple.png"></img>
-                
-                <!--Clock-->
-                <div class="clock">
-                    <h4>Current Time:</h4>
-                    <span id="txt"></span>
+            <!--Windows logo-->
+            <img src="../resources/images/windows.png" alt="Windows logo"></img>
 
-                    <script>
-                    function startTime() {
-                    const today = new Date();
-                    let h = today.getHours();
-                    let m = today.getMinutes();
-                    let s = today.getSeconds();
-                    m = checkTime(m);
-                    s = checkTime(s);
-                    document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-                    setTimeout(startTime, 1000);
-                    }
-
-                    function checkTime(i) {
-                    if (i < 10) {i = "0" + i};
-                    return i;
-                    }
-                    </script>
-                </div>
-
-                <!--Windows logo-->
-                <img src="../resources/images/windows.png"></img>
-
-            </div>
-            <br/>
-            <br/>
-            <br/>
-            <!--Title and Subheading Nav-->
-            <h1 class="title"><b>The Difference Between Mac and Windows Computers</b></h1>
-            <hr/>
-            <div class="navbar">
-                <a href="#intro">Introduction</a><br/>
-                <a href="#mac">Mac Computers (Apple)</a><br/>
-                <a href="#windows">Windows Computers (Microsoft)</a><br/>
-                <a href="#table">Differences Between Mac and Windows</a><br/>
-                <a href="#conclusion">Conclusion</a><br/>
-            </div>
-            <wbr/>
-            <br/>
-            <br/>
-            <!--Intro-->
-            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="intro">Introduction</mark></i> -</h3>
-                <p>
-                    My article is about the pros and cons of using Mac or Windows computers. While the differences may not seem immediately
-                    apparent, the stark contrast between both systems lends to many a comparison and even controversy. In
-                    addition to being produced by two tech giants of the industry, Mac and Windows computers have little in
-                    common other than they they both function as home computers. I have chosen this topic as I am an <i>avid</i>
-                    Apple user across multiple different types of devices, albeit with a Windows computer at home.
-                </p>
-            <br/>
-            <br/>
-            <!--Mac Computers-->
-            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="mac">Mac Computers (Apple)</mark></i> -</h3>
-            <p class="multicol">
-                To start, Mac computers often lend themselves to being hard to get into for users who aren't already integrated within Apple’s ecosystem. While they do seem to be more “new-user friendly” to the untrained eye, with their aesthetically-pleasing menus and easy to navigate hotbar and default apps, Mac computers are probably the most limiting types of computers. Whilst Windows systems are fairly open source, allowing you to modify code without much fuss, change the hardware within the system with ease, and organise your files with maximum precision, Mac computers seem to limit your freedom of modification and customisation, giving you few - if any - opportunities to change out the hardware within your system, or change the fundamental source code within your software, without going through three times the hoops to get to the same place Windows users could get to in one hoop. Mac systems are incompatible with most softwares, as they are built on a different architecture than Windows systems (architecture being the basic foundation for how the machine interprets how to run programs; Mac systems use Apple’s home-grown Metal architecture, which is limited to 64-bit and is harder to make software for, whilst Windows uses their wildly popular DirectX architecture). 
-            </p>
-            <br/>
-            <br/>
-            <!--Windows Computers-->
-            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="windows">Windows Computers (Microsoft)</mark></i> -</h3>
-            <p class="multicol">
-                In contrast, Windows machines are easier to get into for most people, but they are so open-ended, to a new user it can seem like an almost unlimited amount of options for how you want to use your system. Like I’ve stated in the previous paragraph, Windows computers have an almost unlimited amount of potential when it comes to freedom of customisation and organisation. The default Windows apps allow you to easily navigate your files and move them as you see fit, and change the file types with ease. Nearly every instance of software on the internet has been built with Windows in mind, as the language base they use, DirectX, is much more versatile and is much easier to code for than Apple’s Metal architecture; such is the reason why Mac computers have constant issue’s with software compatibility. What’s more, as of MacOS update Catalina, released in October of 2019, Mac systems no longer support 32-bit softwares, which invalidates most older software programs. 64-bit programs became the standard for software after the mid-2000s, as they are more powerful and allow for more computing power within the program. However, most programs nowadays are still built on 32-bit, as they are less costly to make and are less taxing on the user’s system, allowing for an easier time coding the software, and is more energy-efficient on the power supply of the system; such is another factor in why Mac computers generally have compatibility issues.
-            </p>
-            <br/>
-            <!--Table-->
-            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="table">Differences Between Mac and Windows</mark></i> -</h3>
-            <table>
-                <thead>
-                    <tr>
-                        <th>Aspect</th>
-                        <th>Mac Computers (Apple)</th>
-                        <th>Windows Computers (Microsoft)</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <th>User-Friendliness</th>
-                        <th>Aesthetically pleasing, easier for new computer users to understand and navigate, but can be limiting to those already familiar with traditional (Windows) computers.</th>
-                        <th>Open-ended with many options, may feel overwhelming to new users due to the variety of customisation.</th>
-                    </tr>
-                    <tr>
-                        <th>Customisation</th>
-                        <th>Limited freedom in customisation and modification, especially in hardware and software.</th>
-                        <th>Highly customisable, both in the hardware and software fields, and offers greater control and flexibility on how you want your machine to work and feel.</th>
-                    </tr>
-                    <tr>
-                        <th>Software Compatibility</th>
-                        <th>Limited compatibility due to Apple's limiting architecture, with difficulties running software natively built for Windows.</th>
-                        <th>Broad compatibility, with most software programs being designed with Windows in mind, due to DirectX's wide range of compatibility.</th>
-                    </tr>
-                    <tr>
-                        <th>Hardware Modification</th>
-                        <th>Very limited, with few opportunites to upgrade or modify interal and external parts.</th>
-                        <th>Easy to modify and upgrade hardware with little restrictions.</th>
-                    </tr>
-                    <tr>
-                        <th>Architecture</th>
-                        <th>Apple's Metal architecture is limiting and is harder to develop for.</th>
-                        <th>Microsoft's DirectX architecture is widely used across multiple different types of computers, and is much easier to program into.</th>
-                    </tr>
-                    <tr>
-                        <th>32-bit vs 64-bit Support</th>
-                        <th>Dropped 32-bit support after macOS Catalina, rendering many programs available to Mac users unusable.</th>
-                        <th>Can run both 32 and 64-bit programs, garnering a wider variety and compatibility across software types.</th>
-                    </tr>
-                    <tr>
-                        <th>File Management</th>
-                        <th>More restricted and less intuitive, feels clunky.</th>
-                        <th>More precise and specific, and gives more control over how you want to manage your files and the types of files.</th>
-                    </tr>
-                </tbody>
-            </table>
-            <br/>
-            <!--Conclusion-->
-            <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="conclusion">Conclusion</mark></i> -</h3>
+        </section>
+        <br/>
+        <br/>
+        <br/>
+        <!--Title and Subheading Nav-->
+        <h1 class="title"><b>The Difference Between Mac and Windows Computers</b></h1>
+        <hr/>
+        <nav class="navbar">
+            <a href="#intro">Introduction</a><br/>
+            <a href="#mac">Mac Computers (Apple)</a><br/>
+            <a href="#windows">Windows Computers (Microsoft)</a><br/>
+            <a href="#table">Differences Between Mac and Windows</a><br/>
+            <a href="#conclusion">Conclusion</a><br/>
+        </nav>
+        <wbr/>
+        <br/>
+        <br/>
+        <!--Intro-->
+        <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="intro">Introduction</mark></i> -</h3>
             <p>
-                To recap, Mac and Windows computers are generally two ends of a spectrum, as variations of home computing that get the same job done, but through vastly different lenses. Mac computers are typically better for Apple users, as they allow a seamless integration into the computing world for said Apple users, but not for anyone else. In nearly every case, Windows checks all the boxes, and that’s just the facts.
+                My article is about the pros and cons of using Mac or Windows computers. While the differences may not seem immediately
+                apparent, the stark contrast between both systems lends to many a comparison and even controversy. In
+                addition to being produced by two tech giants of the industry, Mac and Windows computers have little in
+                common other than they they both function as home computers. I have chosen this topic as I am an <i>avid</i>
+                Apple user across multiple different types of devices, albeit with a Windows computer at home.
             </p>
-            <br/>
-        </main>
-        <footer>
-            <p>&copy; 2024 Copyright </p>
-        </footer>
+        <br/>
+        <br/>
+        <!--Mac Computers-->
+        <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="mac">Mac Computers (Apple)</mark></i> -</h3>
+        <p class="multicol">
+            To start, Mac computers often lend themselves to being hard to get into for users who aren't already integrated within Apple’s ecosystem. While they do seem to be more “new-user friendly” to the untrained eye, with their aesthetically-pleasing menus and easy to navigate hotbar and default apps, Mac computers are probably the most limiting types of computers. Whilst Windows systems are fairly open source, allowing you to modify code without much fuss, change the hardware within the system with ease, and organise your files with maximum precision, Mac computers seem to limit your freedom of modification and customisation, giving you few - if any - opportunities to change out the hardware within your system, or change the fundamental source code within your software, without going through three times the hoops to get to the same place Windows users could get to in one hoop. Mac systems are incompatible with most softwares, as they are built on a different architecture than Windows systems (architecture being the basic foundation for how the machine interprets how to run programs; Mac systems use Apple’s home-grown Metal architecture, which is limited to 64-bit and is harder to make software for, whilst Windows uses their wildly popular DirectX architecture). 
+        </p>
+        <br/>
+        <br/>
+        <!--Windows Computers-->
+        <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="windows">Windows Computers (Microsoft)</mark></i> -</h3>
+        <p class="multicol">
+            In contrast, Windows machines are easier to get into for most people, but they are so open-ended, to a new user it can seem like an almost unlimited amount of options for how you want to use your system. Like I’ve stated in the previous paragraph, Windows computers have an almost unlimited amount of potential when it comes to freedom of customisation and organisation. The default Windows apps allow you to easily navigate your files and move them as you see fit, and change the file types with ease. Nearly every instance of software on the internet has been built with Windows in mind, as the language base they use, DirectX, is much more versatile and is much easier to code for than Apple’s Metal architecture; such is the reason why Mac computers have constant issue’s with software compatibility. What’s more, as of MacOS update Catalina, released in October of 2019, Mac systems no longer support 32-bit softwares, which invalidates most older software programs. 64-bit programs became the standard for software after the mid-2000s, as they are more powerful and allow for more computing power within the program. However, most programs nowadays are still built on 32-bit, as they are less costly to make and are less taxing on the user’s system, allowing for an easier time coding the software, and is more energy-efficient on the power supply of the system; such is another factor in why Mac computers generally have compatibility issues.
+        </p>
+        <br/>
+        <!--Table-->
+        <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="table">Differences Between Mac and Windows</mark></i> -</h3>
+        <table>
+            <thead>
+                <tr>
+                    <th>Aspect</th>
+                    <th>Mac Computers (Apple)</th>
+                    <th>Windows Computers (Microsoft)</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>User-Friendliness</td>
+                    <td>Aesthetically pleasing, easier for new computer users to understand and navigate, but can be limiting to those already familiar with traditional (Windows) computers.</td>
+                    <td>Open-ended with many options, may feel overwhelming to new users due to the variety of customisation.</td>
+                </tr>
+                <tr>
+                    <td>Customisation</td>
+                    <td>Limited freedom in customisation and modification, especially in hardware and software.</td>
+                    <td>Highly customisable, both in the hardware and software fields, and offers greater control and flexibility on how you want your machine to work and feel.</td>
+                </tr>
+                <tr>
+                    <td>Software Compatibility</td>
+                    <td>Limited compatibility due to Apple's limiting architecture, with difficulties running software natively built for Windows.</td>
+                    <td>Broad compatibility, with most software programs being designed with Windows in mind, due to DirectX's wide range of compatibility.</td>
+                </tr>
+                <tr>
+                    <td>Hardware Modification</td>
+                    <td>Very limited, with few opportunites to upgrade or modify interal and external parts.</td>
+                    <td>Easy to modify and upgrade hardware with little restrictions.</td>
+                </tr>
+                <tr>
+                    <td>Architecture</td>
+                    <td>Apple's Metal architecture is limiting and is harder to develop for.</td>
+                    <td>Microsoft's DirectX architecture is widely used across multiple different types of computers, and is much easier to program into.</td>
+                </tr>
+                <tr>
+                    <td>32-bit vs 64-bit Support</td>
+                    <td>Dropped 32-bit support after macOS Catalina, rendering many programs available to Mac users unusable.</td>
+                    <td>Can run both 32 and 64-bit programs, garnering a wider variety and compatibility across software types.</td>
+                </tr>
+                <tr>
+                    <td>File Management</td>
+                    <td>More restricted and less intuitive, feels clunky.</td>
+                    <td>More precise and specific, and gives more control over how you want to manage your files and the types of files.</td>
+                </tr>
+            </tbody>
+        </table>
+        <br/>
+        <!--Conclusion-->
+        <h3>- <i><mark style="background-color: #FAAE3E;" class="rainbow_text_animated" id="conclusion">Conclusion</mark></i> -</h3>
+        <p>
+            To recap, Mac and Windows computers are generally two ends of a spectrum, as variations of home computing that get the same job done, but through vastly different lenses. Mac computers are typically better for Apple users, as they allow a seamless integration into the computing world for said Apple users, but not for anyone else. In nearly every case, Windows checks all the boxes, and that’s just the facts.
+        </p>
+        <br/>
+    </main>
+    <footer>
+        <p>&copy; 2024 Copyright </p>
+    </footer>
     </div>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
