@@ -1,15 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
-body {
+#page-container {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-style: normal;
     background-color: #ECDFCC;
     color: #181C14;
-}
-
-#page-container {
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -19,6 +16,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    z-index: 1;
     top: 0;
     height: 80px;
     width: 100%;
@@ -41,12 +39,36 @@ header {
 }
 
 .navbar a:hover {
-    color: #bdb2a1
+    color: #bdb2a1;
 }
 
 .navbar a.active {
     font-weight: 600;
     color: #faae3e;
+}
+
+.internal-navigation {
+    display: flex;
+    flex-direction: row;
+    flex: 1;
+    align-items: center;
+    justify-content:space-evenly;
+}
+
+.internal-navigation a {
+    padding: 0.5rem;
+    border: 2px solid #181C14;
+    border-radius: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #181C14;
+}
+
+.internal-navigation a:hover {
+    border: 2px solid #a4100b;
+    background-color: #e9d7bd;
+    color: #a4100b;
+    font-weight: bold;
 }
 
 main {
@@ -67,4 +89,10 @@ footer {
     width: 100%;
     background-color: #257;
     color: #ECDFCC; 
+}
+
+@media screen and (max-width: 768px) {
+    .internal-navigation {
+        flex-direction: column;
+    }
 }

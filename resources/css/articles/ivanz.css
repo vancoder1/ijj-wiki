@@ -31,3 +31,24 @@ h2 {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
 }
+.multicol {
+    column-count: 2;
+    column-width: auto;
+}
+
+.grid-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    overflow-x: auto;
+}
+.grid-images img {
+    width: 350px;
+    justify-self: center;
+}
+
+/* PHONE SCREEN SIZE */
+@media screen and (max-width: 768px) {
+    .multicol {
+        column-count: 1;
+    }
+}
