@@ -34,7 +34,7 @@ p {
 }
 
 h3 {
-    padding-bottom: 0.6rem;
+    padding-top: 0.6rem;
 }
 
 table {
@@ -90,9 +90,15 @@ td, th {
     text-align: center;  
 }
 
+
+
 .clock {
     justify-self: center;
     text-align: center;
+}
+
+html {
+    scroll-padding-top: 90px;
 }
 
 @media screen and (max-width: 540px) {
