@@ -23,6 +23,27 @@ body {
 }
 
 
+/* In-page navigation styling */
+
+#in-page-nav {
+    background-color: black;
+    padding: 1rem 0 1rem 0;
+    margin: 2rem 0 2rem 0;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+a {
+    color: white;
+    font-size: 1rem;
+    font-weight: bold;
+    text-decoration: none;
+}
+/* About section styling */
+
 .about-text {
     column-count: 2;
     column-gap: 2rem;
@@ -31,6 +52,15 @@ body {
 
 .about-text>p {
     margin-top: 0;
+}
+
+/* trying to float images. Come back to this later */
+#history {
+    float: left;
+}
+img {
+    float: right;
+    clear: right;
 }
 
 /* Stats section styling */
