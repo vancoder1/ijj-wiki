@@ -20,7 +20,17 @@ body {
 .section-header {
     font-size: 2rem;
     text-align: center;
-    margin: 2rem;
+}
+
+
+.about-text {
+    column-count: 2;
+    column-gap: 2rem;
+    break-inside: avoid;
+}
+
+.about-text>p {
+    margin-top: 0;
 }
 
 /* Stats section styling */
