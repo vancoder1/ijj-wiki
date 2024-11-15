@@ -3,6 +3,8 @@ body {
     margin: 0;
 }
 
+/* Title and title picture */
+
 #page-header {
     display: flex;
     flex-direction: column;
@@ -14,11 +16,15 @@ body {
     font-size: 3rem;
 }
 
+
 .section-header {
     font-size: 2rem;
     text-align: center;
     margin: 2rem;
 }
+
+/* Stats section styling */
+
 #data {
     text-align: center;
 }
@@ -36,4 +42,30 @@ table {
 td {
     font-weight: bold;
     color: white;
+}
+
+/* Top Player Section */
+
+#player-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+}
+
+.player {
+    background-color: black;
+    margin: 20px;
+    color: white;
+    border-radius: 1rem;
+}
+
+h3 {
+    font-size: 3rem;
+    margin: 0.5rem;
+}
+
+/* Acknowledgements section */
+
+#acknowledgements {
+    text-align: center;
 }
