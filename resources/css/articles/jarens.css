@@ -15,3 +15,10 @@ body {
 #page-header h1 {
     font-size: 3rem;
 }
+
+#data {
+    text-align: center;
+}
+td {
+    border: 5px solid black;
+}
