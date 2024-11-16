@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Hind:wght@300;400;500;600;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
 
 html {
-    scroll-padding-top: 80px;
+    scroll-padding-top: 90px;
 }
 
 #page-container {
@@ -57,7 +57,7 @@ header {
     flex-direction: row;
     flex: 1;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content:space-evenly;
 }
 
 .internal-navigation a {
@@ -73,6 +73,7 @@ header {
     border: 2px solid #a4100b;
     background-color: #e9d7bd;
     color: #a4100b;
+    font-weight: bold;
 }
 
 main {
@@ -92,7 +93,7 @@ footer {
     height: 80px;
     width: 100%;
     background-color: #257;
-    color: #ECDFCC;
+    color: #ECDFCC; 
 }
 
 @media screen and (max-width: 768px) {

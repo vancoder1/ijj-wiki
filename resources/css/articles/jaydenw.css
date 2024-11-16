@@ -1,5 +1,5 @@
 .rainbow_text_animated {
-    background: linear-gradient(to right, #6666ff, #0099ff, #00ff00, #ff3399, #6666ff);
+    background: linear-gradient(to right, #6666ff, #0099ff , #00ff00, #ff3399, #6666ff);
     -webkit-background-clip: text;
     background-clip: text;
     color: transparent;
@@ -8,9 +8,7 @@
 }
 
 @keyframes rainbow_animation {
-
-    0%,
-    100% {
+    0%,100% {
         background-position: 0 0;
     }
 
@@ -62,13 +60,11 @@ td {
     border-top: none;
 }
 
-td:first-child,
-th:first-child {
+td:first-child, th:first-child {
     border-left: none;
 }
 
-td,
-th {
+td, th {
     border-left: solid black 1px;
     border-top: solid black 1px;
     padding: 12px 15px;
@@ -91,7 +87,7 @@ th {
 
 .grid-item {
     padding: 50px;
-    text-align: center;
+    text-align: center;  
 }
 
 
